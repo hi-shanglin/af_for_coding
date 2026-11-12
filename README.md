@@ -91,28 +91,6 @@ npm run build   # 生成 Remotion bundle，不导出视频
 
 `node_modules/`、`build/` 和 `out/` 不提交到仓库。配乐文件及其生成脚本均随源码提供。
 
-## 上传到 GitHub
-
-创建一个空仓库后，推荐使用 Git 推送本项目。项目已经初始化 Git，可在根目录运行：
-
-```sh
-git add .
-git diff --cached --stat
-git commit -m "Add AF for coding concept video and documentation"
-```
-
-然后复制 GitHub 空仓库页面中 “push an existing repository” 提供的命令，配置远程地址并推送。提交前先核对暂存文件列表。
-
-如果使用 GitHub 网页上传，手动选择下列文件和目录，并保留目录结构：
-
-- `src/`、`public/`、`scripts/`
-- `README.md`、`preview.jpg`
-- `package.json`、`package-lock.json`
-- `remotion.config.ts`、`tsconfig.json`、`eslint.config.mjs`
-- `.gitignore`、`.prettierrc`、`.nvmrc`
-
-网页拖拽上传不会自动应用 `.gitignore`；不要上传 `node_modules/`、`build/`、`out/`、`.git/` 或 `.env` 文件。导出的 MP4 可单独作为 GitHub Release 附件分享。
-
 ## 技术与授权
 
 - Remotion 4.0.543
